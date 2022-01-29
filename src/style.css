@@ -1,1 +1,65 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.card {
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-size: 6em;
+  padding: 15px 8px;
+}
+.spades::before {
+  content: "\2660";
+  width: 100%;
+}
+.spades::after {
+  content: "\2660";
+  width: 100%;
+  transform: rotate(180deg);
+}
+.diams::before {
+  content: "\2666";
+  width: 100%;
+}
+.diams::after {
+  content: "\2666";
+  width: 100%;
+  transform: rotate(180deg);
+}
+.hearts::before {
+  content: "\2665";
+  width: 100%;
+  color: red;
+}
+.hearts::after {
+  content: "\2665";
+  width: 100%;
+  color: red;
+  transform: rotate(180deg);
+}
+.clubs::before {
+  content: "\2663";
+  width: 100%;
+}
+.clubs::after {
+  content: "\2663";
+  width: 100%;
+  transform: rotate(180deg);
+}
+.buttomR {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.recharge {
+  font-size: 2em;
+  background-color: orange;
+  border-radius: 10px;
+}
